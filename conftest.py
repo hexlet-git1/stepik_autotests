@@ -1,12 +1,10 @@
 import pytest
-import time
 from selenium import webdriver
-from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
 
 
 def pytest_addoption(parser):
-     parser.addoption('--language', action='store', default='ru',
+     parser.addoption('--language', action='store', default='en',
                       help="Choose language browser")
     
 @pytest.fixture(scope="function")
